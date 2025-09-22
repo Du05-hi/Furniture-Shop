@@ -1,56 +1,75 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ShopNoiThat.Models;
+using ShopNoiThat.Data;
 
 namespace ShopNoiThat
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-            builder.Services.AddControllersWithViews();
 
             // Kết nối SQL Server
             var connectionString = builder.Configuration.GetConnectionString("NoiThatDbConnect");
             builder.Services.AddDbContext<ShopNoiThatDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
-            // Nếu bạn muốn dùng Identity chuẩn, bạn có thể thêm:
-            // builder.Services.AddIdentity<User, IdentityRole>()
-            //     .AddEntityFrameworkStores<ShopNoiThatDbContext>()
-            //     .AddDefaultTokenProviders();
+            // Thêm Identity (User + Role)
+            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 6;
+            })
+            .AddEntityFrameworkStores<ShopNoiThatDbContext>()
+            .AddDefaultTokenProviders();
+
+            builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
-            // Tạo admin mặc định
+            // Tạo Role + Admin mặc định
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var db = services.GetRequiredService<ShopNoiThatDbContext>();
 
-                // Nếu dùng migrations để tạo bảng, bỏ comment dòng này:
-                // db.Database.Migrate();
+                var userManager = services.GetRequiredService<UserManager<User>>();
+                var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
-                if (!db.Users.Any(u => u.UserName == "admin"))
+                string[] roleNames = { "Admin", "User" };
+
+                foreach (var roleName in roleNames)
                 {
-                    var hasher = new PasswordHasher<User>();
-                    var admin = new User
+                    if (!await roleManager.RoleExistsAsync(roleName))
+                    {
+                        await roleManager.CreateAsync(new IdentityRole(roleName));
+                    }
+                }
+
+                // Tạo admin mặc định
+                var admin = await userManager.FindByNameAsync("admin");
+                if (admin == null)
+                {
+                    admin = new User
                     {
                         UserName = "admin",
-                        FullName = "Quản trị viên",
                         Email = "admin@shop.com",
-                        Role = "Admin"
+                        FullName = "Quản trị viên"
                     };
-                    admin.PasswordHash = hasher.HashPassword(admin, "Admin@123"); // mật khẩu mặc định
-                    db.Users.Add(admin);
-                    db.SaveChanges();
+
+                    var result = await userManager.CreateAsync(admin, "Admin@123");
+                    if (result.Succeeded)
+                    {
+                        await userManager.AddToRoleAsync(admin, "Admin");
+                    }
                 }
             }
 
-            // Configure the HTTP request pipeline.
+            // Middleware
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
@@ -62,6 +81,7 @@ namespace ShopNoiThat
 
             app.UseRouting();
 
+            app.UseAuthentication(); // quan trọng: thêm xác thực
             app.UseAuthorization();
 
             app.MapControllerRoute(

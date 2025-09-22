@@ -1,46 +1,69 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using ShopNoiThat.Data;
 using ShopNoiThat.Models;
 
 namespace ShopNoiThat.Controllers
 {
+    [Authorize(Roles = "Admin")] // Chỉ Admin mới được vào
     public class AdminController : Controller
     {
+        private readonly UserManager<User> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ShopNoiThatDbContext _context;
 
-        public AdminController(ShopNoiThatDbContext context)
+        public AdminController(
+            UserManager<User> userManager,
+            RoleManager<IdentityRole> roleManager,
+            ShopNoiThatDbContext context)
         {
+            _userManager = userManager;
+            _roleManager = roleManager;
             _context = context;
         }
 
-        private bool IsAdmin()
+        // Trang dashboard
+        public async Task<IActionResult> Index()
         {
-            return HttpContext.Session.GetString("Role") == "Admin";
-        }
+            var totalUsers = _userManager.Users.Count();
+            var totalAdmins = (await _userManager.GetUsersInRoleAsync("Admin")).Count;
+            var totalProducts = _context.Products.Count();
 
-        public IActionResult Index()
-        {
-            if (!IsAdmin()) return RedirectToAction("AccessDenied", "Auth");
+            ViewBag.TotalUsers = totalUsers;
+            ViewBag.TotalAdmins = totalAdmins;
+            ViewBag.TotalProducts = totalProducts;
 
-            ViewBag.TotalProducts = _context.Products.Count();
-            ViewBag.TotalUsers = _context.Users.Count();
             return View();
         }
 
+        // Quản lý user
         public IActionResult Users()
         {
-            if (!IsAdmin()) return RedirectToAction("AccessDenied", "Auth");
-            var users = _context.Users.ToList();
+            var users = _userManager.Users.ToList();
             return View(users);
         }
 
-        public IActionResult DeleteUser(int id)
+        // Xoá user
+        [HttpPost]
+        public async Task<IActionResult> DeleteUser(string id)
         {
-            if (!IsAdmin()) return RedirectToAction("AccessDenied", "Auth");
-            var user = _context.Users.Find(id);
+            var user = await _userManager.FindByIdAsync(id);
             if (user != null)
             {
-                _context.Users.Remove(user);
-                _context.SaveChanges();
+                await _userManager.DeleteAsync(user);
+            }
+            return RedirectToAction("Users");
+        }
+
+        // Thêm user vào role
+        [HttpPost]
+        public async Task<IActionResult> AddToRole(string userId, string role)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user != null && await _roleManager.RoleExistsAsync(role))
+            {
+                await _userManager.AddToRoleAsync(user, role);
             }
             return RedirectToAction("Users");
         }

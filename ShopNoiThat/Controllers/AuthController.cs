@@ -1,64 +1,95 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using ShopNoiThat.Models;
 
 namespace ShopNoiThat.Controllers
 {
     public class AuthController : Controller
     {
-        private readonly ShopNoiThatDbContext _context;
+        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<User> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AuthController(ShopNoiThatDbContext context)
+        public AuthController(
+            UserManager<User> userManager,
+            SignInManager<User> signInManager,
+            RoleManager<IdentityRole> roleManager)
         {
-            _context = context;
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _roleManager = roleManager;
         }
 
-        // Đăng ký
+        // --- ĐĂNG KÝ ---
         public IActionResult Register() => View();
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(User user)
+        public async Task<IActionResult> Register(User model, string password)
         {
             if (ModelState.IsValid)
             {
-                user.Role = "User"; // mặc định User
-                _context.Users.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Login");
+                var user = new User
+                {
+                    UserName = model.UserName,
+                    Email = model.Email,
+                    FullName = model.FullName
+                };
+
+                var result = await _userManager.CreateAsync(user, password);
+
+                if (result.Succeeded)
+                {
+                    // Gán role mặc định "User"
+                    if (!await _roleManager.RoleExistsAsync("User"))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole("User"));
+                    }
+                    await _userManager.AddToRoleAsync(user, "User");
+
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("Index", "Home");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
             }
-            return View(user);
+            return View(model);
         }
 
-        // Đăng nhập
-        public IActionResult Login() => View();
+        // --- ĐĂNG NHẬP ---
+        public IActionResult Login(string? returnUrl = null)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(string userName, string password)
+        public async Task<IActionResult> Login(string userName, string password, string? returnUrl = null)
         {
-            var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.UserName == userName && u.Password == password);
+            var result = await _signInManager.PasswordSignInAsync(userName, password, false, false);
 
-            if (user == null)
+            if (result.Succeeded)
             {
-                ViewBag.Error = "Sai tài khoản hoặc mật khẩu!";
-                return View();
+                var user = await _userManager.FindByNameAsync(userName);
+
+                if (await _userManager.IsInRoleAsync(user, "Admin"))
+                    return RedirectToAction("Index", "Admin");
+
+                return Redirect(returnUrl ?? Url.Action("Index", "Home"));
             }
 
-            HttpContext.Session.SetString("UserId", user.UserId.ToString());
-            HttpContext.Session.SetString("UserName", user.UserName);
-            HttpContext.Session.SetString("Role", user.Role);
-
-            if (user.Role == "Admin")
-                return RedirectToAction("Index", "Admin");
-            else
-                return RedirectToAction("Index", "Home");
+            ViewBag.Error = "Sai tài khoản hoặc mật khẩu!";
+            return View();
         }
 
-        public IActionResult Logout()
+        // --- ĐĂNG XUẤT ---
+        public async Task<IActionResult> Logout()
         {
-            HttpContext.Session.Clear();
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Login");
         }
 

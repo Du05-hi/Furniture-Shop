@@ -1,53 +1,37 @@
-@model IEnumerable<ShopNoiThat.Models.Product>
-
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Trang quản trị";
 }
 
-<h1>Index</h1>
+<h2>Dashboard - Quản trị viên</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Image)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Người dùng</div>
+            <div class="card-body">
+                <h5 class="card-title">@ViewBag.TotalUsers</h5>
+                <p class="card-text">Tổng số tài khoản trong hệ thống</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Quản trị viên</div>
+            <div class="card-body">
+                <h5 class="card-title">@ViewBag.TotalAdmins</h5>
+                <p class="card-text">Số lượng Admin hiện có</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">Sản phẩm</div>
+            <div class="card-body">
+                <h5 class="card-title">@ViewBag.TotalProducts</h5>
+                <p class="card-text">Tổng số sản phẩm đang bán</p>
+            </div>
+        </div>
+    </div>
+</div>

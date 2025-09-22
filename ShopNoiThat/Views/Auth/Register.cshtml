@@ -1,34 +1,29 @@
-﻿@model ShopNoiThat.Models.RegisterViewModel
-@{
+﻿@{
     ViewData["Title"] = "Đăng ký";
 }
 
-<h2>Đăng ký</h2>
+<h2>Đăng ký tài khoản</h2>
 
 <form asp-action="Register" method="post">
-    <div class="mb-3">
-        <label asp-for="UserName" class="form-label"></label>
-        <input asp-for="UserName" class="form-control" />
-        <span asp-validation-for="UserName" class="text-danger"></span>
+    <div class="form-group">
+        <label>Tên đăng nhập</label>
+        <input type="text" name="username" class="form-control" required />
     </div>
-    <div class="mb-3">
-        <label asp-for="Password" class="form-label"></label>
-        <input asp-for="Password" type="password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" required />
     </div>
-    <div class="mb-3">
-        <label asp-for="FullName" class="form-label"></label>
-        <input asp-for="FullName" class="form-control" />
-    </div>
-    <div class="mb-3">
-        <label asp-for="Email" class="form-label"></label>
-        <input asp-for="Email" class="form-control" />
+
+    <div class="form-group">
+        <label>Mật khẩu</label>
+        <input type="password" name="password" class="form-control" required />
     </div>
 
     <button type="submit" class="btn btn-success">Đăng ký</button>
-    <a asp-action="Login" class="btn btn-link">Đã có tài khoản? Đăng nhập</a>
-</form>
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+    @if (ViewBag.Error != null)
+    {
+        <div class="text-danger mt-2">@ViewBag.Error</div>
+    }
+</form>

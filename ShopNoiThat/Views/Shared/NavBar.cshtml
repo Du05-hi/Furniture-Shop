@@ -24,7 +24,7 @@
                 <li class="nav-item"><a class="nav-link" asp-controller="Products" asp-action="Index">Sản phẩm</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
 
-                @* Admin link *@
+                @* Admin link nếu role là Admin *@
                 @if (role == "Admin")
                 {
                     <li class="nav-item">
@@ -46,26 +46,28 @@
             </div>
 
             <!-- User menu -->
-            @if (!string.IsNullOrEmpty(userName))
-            {
-                <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                @if (!string.IsNullOrEmpty(userName))
+                {
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
                             Xin chào @userName
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
+                            @if (role == "Admin")
+                            {
+                                <li><a class="dropdown-item text-warning" asp-controller="Admin" asp-action="Index">Quản trị</a></li>
+                            }
                             <li><a class="dropdown-item" asp-controller="Auth" asp-action="Logout">Đăng xuất</a></li>
                         </ul>
                     </li>
-                </ul>
-            }
-            else
-            {
-                <ul class="navbar-nav mb-2 mb-lg-0">
+                }
+                else
+                {
                     <li class="nav-item"><a class="nav-link text-white" asp-controller="Auth" asp-action="Login">Đăng nhập</a></li>
                     <li class="nav-item"><a class="nav-link text-white" asp-controller="Auth" asp-action="Register">Đăng ký</a></li>
-                </ul>
-            }
+                }
+            </ul>
 
             <!-- Nút Liên hệ -->
             <a href="#" class="btn btn-success ms-3">Liên hệ</a>
