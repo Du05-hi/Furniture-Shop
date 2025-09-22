@@ -1,0 +1,17 @@
+﻿@model ShopNoiThat.Models.Product
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+<h2>@ViewData["Title"]</h2>
+
+<div class="card mb-3" style="max-width: 600px;">
+    <img src="~/images/@(string.IsNullOrEmpty(Model.Image) ? "placeholder.png" : Model.Image)"
+         class="card-img-top" style="height:300px;object-fit:cover;" />
+    <div class="card-body">
+        <h4 class="card-title">@Model.Name</h4>
+        <p class="card-text">@Model.Description</p>
+        <p><strong>Giá:</strong> @Model.Price.ToString("N0") ₫</p>
+    </div>
+</div>
+
+<a class="btn btn-secondary" asp-action="Index">Quay lại</a>

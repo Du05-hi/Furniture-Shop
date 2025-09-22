@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ShopNoiThat.Models.Product>
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<!-- Hero Banner -->
+<div class="hero-section text-white d-flex align-items-center justify-content-center text-center">
+    <div class="overlay"></div>
+    <div class="content">
+        <h5 class="mb-3">Được khách hàng tin dùng</h5>
+        <h1 class="display-3 fw-bold">KHÔNG GIAN SỐNG<br />ĐẲNG CẤP</h1>
+        <p class="lead mb-4">Nội thất sang trọng – Bền vững – Thẩm mỹ</p>
+        <a class="btn btn-success btn-lg me-3" asp-controller="Products" asp-action="Index">Xem Sản Phẩm</a>
+        <a class="btn btn-outline-light btn-lg" href="#">Xem Dịch Vụ</a>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿@model ShopNoiThat.Models.Product
+@{
+    ViewData["Title"] = "Sửa sản phẩm";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" enctype="multipart/form-data" method="post">
+    <input type="hidden" asp-for="ProductId" />
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ảnh hiện tại:</label><br />
+        @if (!string.IsNullOrEmpty(Model.Image))
+        {
+            <img src="~/images/@Model.Image" style="max-height:150px;" />
+        }
+        else
+        {
+            <span>Chưa có ảnh</span>
+        }
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Chọn ảnh mới</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
