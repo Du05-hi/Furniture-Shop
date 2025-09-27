@@ -1,0 +1,11 @@
+@model FurnitureShop.Models.Product
+@{
+    ViewData["Title"] = "Thêm sản phẩm";
+}
+<h1>Thêm sản phẩm</h1>
+<form method="post">
+    <partial name="_Form" model="Model" />
+    <button class="btn btn-primary">Lưu</button>
+    <a class="btn btn-outline-secondary" asp-action="Index">Hủy</a>
+    @Html.AntiForgeryToken()
+</form>

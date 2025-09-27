@@ -1,0 +1,29 @@
+@model IEnumerable<FurnitureShop.Models.Product>
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1>Quản lý sản phẩm</h1>
+    <a class="btn btn-primary" asp-action="Create">Thêm sản phẩm</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th><th>Tên</th><th>Giá</th><th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>@p.Price.ToString("N0") đ</td>
+            <td class="text-end">
+                <a class="btn btn-sm btn-secondary" asp-action="Edit" asp-route-id="@p.Id">Sửa</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@p.Id">Xóa</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

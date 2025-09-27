@@ -1,0 +1,74 @@
+﻿@model FurnitureShop.Models.Order
+@{
+    ViewData["Title"] = "Chi tiết đơn hàng (Admin)";
+}
+
+<h2 class="mb-4">📦 Chi tiết đơn hàng #@Model.Id</h2>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <p><b>👤 Người đặt:</b> @Model.User?.UserName</p>
+        <p><b>📅 Ngày đặt:</b> @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</p>
+        <p>
+            <b>📌 Trạng thái:</b>
+            <span class="badge bg-@(Model.Status == "Pending" ? "warning" :
+                                     Model.Status == "Completed" ? "success" : "danger")">
+                @Model.Status
+            </span>
+        </p>
+    </div>
+</div>
+
+<h4 class="mb-3">🛒 Sản phẩm trong đơn</h4>
+<table class="table table-bordered align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Hình ảnh</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var d in Model.OrderDetails)
+        {
+            <tr>
+                <td>@d.Product?.Name</td>
+                <td>
+                    <img src="@(string.IsNullOrWhiteSpace(d.Product?.ImageUrl) ? "https://placehold.co/100x80" : d.Product.ImageUrl)"
+                         alt="@d.Product?.Name" style="width:100px; height:80px; object-fit:cover" />
+                </td>
+                <td>@d.Quantity</td>
+                <td>@d.UnitPrice.ToString("N0") đ</td>
+                <td>@(d.Quantity * d.UnitPrice).ToString("N0") đ</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr class="fw-bold">
+            <td colspan="4" class="text-end">Tổng cộng:</td>
+            <td>@Model.OrderDetails.Sum(d => d.Quantity * d.UnitPrice).ToString("N0") đ</td>
+        </tr>
+    </tfoot>
+</table>
+
+@if (Model.Payment != null)
+{
+    <h4 class="mt-4">💳 Thông tin thanh toán</h4>
+    <ul class="list-group">
+        <li class="list-group-item"><b>Phương thức:</b> @Model.Payment.Method</li>
+        <li class="list-group-item"><b>Số tiền:</b> @Model.Payment.Amount.ToString("N0") đ</li>
+        <li class="list-group-item"><b>Trạng thái:</b> @Model.Payment.Status</li>
+        @if (Model.Payment.PaidAt != null)
+        {
+            <li class="list-group-item"><b>Ngày thanh toán:</b> @Model.Payment.PaidAt?.ToString("dd/MM/yyyy HH:mm")</li>
+        }
+    </ul>
+}
+
+<div class="mt-4">
+    <a asp-action="AdminIndex" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Quay lại danh sách
+    </a>
+</div>

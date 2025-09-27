@@ -1,0 +1,19 @@
+@model FurnitureShop.Models.Product
+<div class="mb-3">
+    <label class="form-label">Tên</label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Mô tả</label>
+    <textarea asp-for="Description" class="form-control"></textarea>
+</div>
+<div class="mb-3">
+    <label class="form-label">Giá</label>
+    <input asp-for="Price" class="form-control" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label class="form-label">Ảnh (URL)</label>
+    <input asp-for="ImageUrl" class="form-control" />
+</div>

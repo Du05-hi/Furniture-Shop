@@ -1,0 +1,35 @@
+@model IEnumerable<FurnitureShop.Models.AppUser>
+@{
+    ViewData["Title"] = "Quản lý người dùng";
+}
+<h1>Quản lý người dùng</h1>
+<table class="table table-striped">
+    <thead><tr><th>ID</th><th>Username</th><th>Role</th><th></th></tr></thead>
+    <tbody>
+    @foreach (var u in Model)
+    {
+        <tr>
+            <td>@u.Id</td>
+            <td>@u.UserName</td>
+            <td>@u.Role</td>
+            <td class="text-end">
+                <form asp-action="Promote" method="post" class="d-inline">
+                    <input type="hidden" name="id" value="@u.Id" />
+                    <button class="btn btn-sm btn-outline-primary">Set Admin</button>
+                    @Html.AntiForgeryToken()
+                </form>
+                <form asp-action="Demote" method="post" class="d-inline ms-1">
+                    <input type="hidden" name="id" value="@u.Id" />
+                    <button class="btn btn-sm btn-outline-secondary">Set User</button>
+                    @Html.AntiForgeryToken()
+                </form>
+                <form asp-action="Delete" method="post" class="d-inline ms-1">
+                    <input type="hidden" name="id" value="@u.Id" />
+                    <button class="btn btn-sm btn-danger">Xóa</button>
+                    @Html.AntiForgeryToken()
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+﻿.hero-banner {
+    min-height: 80vh;
+    background: url('/images/home-banner.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 60px 0;
+}
+
+    .hero-banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.5); /* overlay tối */
+    }
+
+    .hero-banner .container {
+        position: relative;
+        z-index: 2;
+    }

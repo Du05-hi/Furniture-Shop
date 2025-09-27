@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4"><i class="bi bi-speedometer2"></i> Dashboard Admin</h2>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <div class="card text-white bg-primary shadow">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-people"></i> Người dùng</h5>
+                    <p class="display-6">@ViewData["TotalUsers"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success shadow">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-box-seam"></i> Sản phẩm</h5>
+                    <p class="display-6">@ViewData["TotalProducts"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-warning shadow">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-cart-check"></i> Đơn hàng</h5>
+                    <p class="display-6">@ViewData["TotalOrders"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-danger shadow">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-cash-coin"></i> Doanh thu</h5>
+                    <p class="display-6">@String.Format("{0:N0} ₫", ViewData["TotalRevenue"])</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Biểu đồ doanh thu -->
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-graph-up"></i> Doanh thu theo tháng</h5>
+            <canvas id="revenueChart" height="100"></canvas>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        fetch('/Admin/RevenueChart')
+            .then(res => res.json())
+            .then(data => {
+                const labels = data.map(d => d.month);
+                const values = data.map(d => d.total);
+
+                new Chart(document.getElementById('revenueChart'), {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Doanh thu (VNĐ)',
+                            data: values,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { position: 'top' }
+                        },
+                        scales: {
+                            y: {
+                                ticks: {
+                                    callback: function(value) {
+                                        return value.toLocaleString("vi-VN") + " ₫";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+    </script>
+}

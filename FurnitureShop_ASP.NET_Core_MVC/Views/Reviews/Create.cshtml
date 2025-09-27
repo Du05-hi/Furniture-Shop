@@ -1,0 +1,22 @@
+﻿@model FurnitureShop.Models.Review
+
+@{
+    ViewData["Title"] = "Thêm đánh giá";
+}
+
+<h2>Thêm đánh giá</h2>
+
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="ProductId" />
+    <div class="mb-3">
+        <label asp-for="Rating" class="form-label"></label>
+        <input asp-for="Rating" class="form-control" min="1" max="5" />
+        <span asp-validation-for="Rating" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Comment" class="form-label"></label>
+        <textarea asp-for="Comment" class="form-control"></textarea>
+        <span asp-validation-for="Comment" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Gửi</button>
+</form>

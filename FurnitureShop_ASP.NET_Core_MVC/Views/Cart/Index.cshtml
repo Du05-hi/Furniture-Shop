@@ -1,0 +1,70 @@
+﻿@model IEnumerable<FurnitureShop.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Giỏ hàng của bạn";
+    var total = Model.Sum(i => i.Product.Price * i.Quantity);
+}
+
+<h2 class="mb-4">🛒 Giỏ hàng của bạn</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        Giỏ hàng trống. <a asp-controller="Products" asp-action="Index">Mua sắm ngay</a>!
+    </div>
+}
+else
+{
+    <table class="table table-striped align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Hình ảnh</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>
+                        <img src="@(string.IsNullOrWhiteSpace(item.Product.ImageUrl) ? "https://placehold.co/100x80" : item.Product.ImageUrl)"
+                             alt="@item.Product.Name" style="width:100px; height:80px; object-fit:cover" />
+                    </td>
+                    <td>@item.Product.Price.ToString("N0") đ</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Product.Price * item.Quantity).ToString("N0") đ</td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="Remove" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn btn-sm btn-danger">
+                                <i class="bi bi-trash"></i> Xóa
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr class="fw-bold">
+                <td colspan="4" class="text-end">Tổng cộng:</td>
+                <td colspan="2">@total.ToString("N0") đ</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="d-flex justify-content-between">
+        <a asp-controller="Products" asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Tiếp tục mua sắm
+        </a>
+
+        <a asp-controller="Orders" asp-action="Checkout" class="btn btn-success">
+            <i class="bi bi-credit-card"></i> Thanh toán
+        </a>
+    </div>
+}

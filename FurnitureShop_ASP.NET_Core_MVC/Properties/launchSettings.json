@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "FurnitureShop": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55713;http://localhost:55714"
+    }
+  }
+}

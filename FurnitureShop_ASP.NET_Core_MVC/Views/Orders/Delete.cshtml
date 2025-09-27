@@ -1,0 +1,11 @@
+﻿@model FurnitureShop.Models.Order
+
+<h2>Xóa đơn hàng</h2>
+<div>
+    <h4>Bạn có chắc muốn xóa đơn #@Model.Id của @Model.User.UserName?</h4>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

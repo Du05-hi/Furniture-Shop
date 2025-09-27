@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Thống kê đơn hàng";
+}
+
+<h2 class="mb-4"><i class="bi bi-bar-chart-line"></i> @ViewData["Title"]</h2>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card text-bg-primary shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">Tổng đơn</h5>
+                <p class="display-6">@ViewBag.Total</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-bg-warning shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">Đang xử lý</h5>
+                <p class="display-6">@ViewBag.Pending</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-bg-success shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">Hoàn thành</h5>
+                <p class="display-6">@ViewBag.Completed</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-bg-danger shadow">
+            <div class="card-body text-center">
+                <h5 class="card-title">Đã hủy</h5>
+                <p class="display-6">@ViewBag.Cancelled</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Biểu đồ Chart.js -->
+<div class="card shadow">
+    <div class="card-body">
+        <canvas id="ordersChart" height="120"></canvas>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('ordersChart');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Pending', 'Completed', 'Cancelled'],
+                datasets: [{
+                    data: [@ViewBag.Pending, @ViewBag.Completed, @ViewBag.Cancelled],
+                    backgroundColor: ['#f0ad4e', '#5cb85c', '#d9534f']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    title: {
+                        display: true,
+                        text: 'Phân loại trạng thái đơn hàng'
+                    }
+                }
+            }
+        });
+    </script>
+}

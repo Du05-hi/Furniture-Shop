@@ -1,0 +1,11 @@
+@model FurnitureShop.Models.Product
+@{
+    ViewData["Title"] = "Xóa sản phẩm";
+}
+<h1>Bạn có chắc muốn xóa?</h1>
+<div class="mb-3"><strong>@Model.Name</strong> - @Model.Price.ToString("N0") đ</div>
+<form method="post">
+    <button class="btn btn-danger">Xóa</button>
+    <a class="btn btn-outline-secondary" asp-action="Index">Hủy</a>
+    @Html.AntiForgeryToken()
+</form>

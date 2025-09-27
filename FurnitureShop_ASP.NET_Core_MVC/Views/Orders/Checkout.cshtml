@@ -1,0 +1,45 @@
+﻿@model IEnumerable<FurnitureShop.Models.CartItem>
+@{
+    ViewData["Title"] = "Thanh toán";
+    var total = Model.Sum(i => i.Product.Price * i.Quantity);
+}
+
+<h2 class="mb-4">💳 Thanh toán</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Product.Name</td>
+                <td>@item.Product.Price.ToString("N0") đ</td>
+                <td>@item.Quantity</td>
+                <td>@(item.Product.Price * item.Quantity).ToString("N0") đ</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr class="fw-bold">
+            <td colspan="3" class="text-end">Tổng cộng:</td>
+            <td>@total.ToString("N0") đ</td>
+        </tr>
+    </tfoot>
+</table>
+
+<form asp-action="CheckoutConfirm" method="post">
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-success">
+        <i class="bi bi-check-circle"></i> Xác nhận thanh toán
+    </button>
+    <a asp-controller="Cart" asp-action="Index" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Quay lại giỏ hàng
+    </a>
+</form>
