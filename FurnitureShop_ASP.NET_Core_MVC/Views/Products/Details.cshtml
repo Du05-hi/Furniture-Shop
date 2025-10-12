@@ -3,85 +3,120 @@
     ViewData["Title"] = Model.Name;
 }
 
-<div class="row mb-4">
-    <div class="col-md-6">
-        <img src="@(string.IsNullOrWhiteSpace(Model.ImageUrl) ? "https://placehold.co/800x600" : Model.ImageUrl)"
-             class="img-fluid rounded shadow" />
-    </div>
-    <div class="col-md-6">
-        <h1>@Model.Name</h1>
-        <p class="lead">@Model.Description</p>
-        <h3 class="text-primary">@Model.Price.ToString("N0") đ</h3>
-
-        <!-- Nút thêm vào giỏ -->
-        <form asp-controller="Cart" asp-action="Add" method="post" class="mt-3">
-            <input type="hidden" name="productId" value="@Model.Id" />
-            <div class="input-group" style="max-width:200px">
-                <input type="number" name="quantity" value="1" min="1" class="form-control" />
-                <button type="submit" class="btn btn-success">
-                    <i class="bi bi-cart-plus"></i> Thêm giỏ hàng
-                </button>
+<div class="container py-4">
+    <div class="row mb-4">
+        <!-- Ảnh sản phẩm -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-3">
+                <img src="@(string.IsNullOrWhiteSpace(Model.ImageUrl) ? "https://placehold.co/800x600" : Model.ImageUrl)"
+                     alt="@Model.Name"
+                     class="card-img-top img-fluid rounded"
+                     style="object-fit:cover; height:420px;" />
             </div>
-        </form>
+        </div>
 
-        <a class="btn btn-outline-secondary mt-3" asp-action="Index">Quay lại</a>
+        <!-- Thông tin sản phẩm -->
+        <div class="col-md-6">
+            <h2 class="fw-bold">@Model.Name</h2>
+            <p class="lead text-muted">@Model.Description</p>
+            <h3 class="text-primary fw-bold">@Model.Price.ToString("N0") đ</h3>
+
+            <!-- Form thêm vào giỏ -->
+            <form asp-controller="Cart" asp-action="Add" method="post" class="mt-3">
+                <input type="hidden" name="productId" value="@Model.Id" />
+                <div class="input-group" style="max-width:240px">
+                    <input type="number" name="quantity" value="1" min="1" class="form-control" />
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-cart-plus"></i> Thêm giỏ hàng
+                    </button>
+                </div>
+            </form>
+
+            <a class="btn btn-outline-secondary mt-3" asp-action="Index">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+        </div>
     </div>
+
+    <hr />
+
+    <!-- ⭐ PHẦN REVIEW -->
+    <h3 class="mb-3 fw-bold">Đánh giá sản phẩm</h3>
+
+    @if (Model.Reviews != null && Model.Reviews.Any())
+    {
+        foreach (var r in Model.Reviews.OrderByDescending(r => r.CreatedAt))
+        {
+            <div class="border rounded p-3 mb-3 shadow-sm bg-light">
+                <strong>@(r.User?.UserName ?? "Ẩn danh")</strong> -
+                <span class="text-warning">
+                    @for (int i = 1; i <= 5; i++)
+                    {
+                        if (i <= r.Rating)
+                        {
+                            <i class="bi bi-star-fill"></i>
+                        }
+                        else
+                        {
+                            <i class="bi bi-star"></i>
+                        }
+                    }
+                </span>
+                <p class="mb-1">@r.Comment</p>
+                <small class="text-muted">@r.CreatedAt.ToString("dd/MM/yyyy HH:mm")</small>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-muted">Chưa có đánh giá nào cho sản phẩm này.</p>
+    }
+
+    <!-- 📝 FORM GỬI REVIEW -->
+    @if (User.Identity?.IsAuthenticated ?? false)
+    {
+        <h4 class="mt-4 fw-semibold">Viết đánh giá của bạn</h4>
+        <form asp-controller="Reviews" asp-action="Create" method="post" class="mt-3">
+            <input type="hidden" name="ProductId" value="@Model.Id" />
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Số sao (1–5)</label>
+                <input type="number" name="Rating" min="1" max="5" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Bình luận</label>
+                <textarea name="Comment" class="form-control" rows="3" placeholder="Viết nhận xét của bạn..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                <i class="bi bi-send"></i> Gửi đánh giá
+            </button>
+        </form>
+    }
+    else
+    {
+        <p class="text-muted mt-3">
+            Bạn cần <a asp-controller="Account" asp-action="Login">đăng nhập</a> để đánh giá sản phẩm.
+        </p>
+    }
 </div>
 
-<hr />
-
-<!-- PHẦN REVIEW -->
-<h3 class="mb-3">Đánh giá sản phẩm</h3>
-
-@if (Model.Reviews != null && Model.Reviews.Any())
-{
-    foreach (var r in Model.Reviews.OrderByDescending(r => r.CreatedAt))
-    {
-        <div class="border rounded p-3 mb-3 shadow-sm">
-            <strong>@r.User.UserName</strong> -
-            <span class="text-warning">
-                @for (int i = 1; i <= 5; i++)
-                {
-                    if (i <= r.Rating)
-                    {
-                        <i class="bi bi-star-fill"></i>
-                    }
-                    else
-                    {
-                        <i class="bi bi-star"></i>
-                    }
-                }
-            </span>
-            <p class="mb-1">@r.Comment</p>
-            <small class="text-muted">@r.CreatedAt.ToString("dd/MM/yyyy HH:mm")</small>
-        </div>
+<style>
+    h2, h3, h4 {
+        font-family: 'Segoe UI', sans-serif;
     }
-}
-else
-{
-    <p class="text-muted">Chưa có đánh giá nào.</p>
-}
 
-<!-- FORM GỬI REVIEW -->
-@if (User.Identity?.IsAuthenticated ?? false)
-{
-    <h4 class="mt-4">Viết đánh giá của bạn</h4>
-    <form asp-controller="Reviews" asp-action="Create" method="post">
-        <input type="hidden" name="ProductId" value="@Model.Id" />
-        <div class="mb-3">
-            <label class="form-label">Số sao (1-5)</label>
-            <input type="number" name="Rating" min="1" max="5" class="form-control" required />
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Bình luận</label>
-            <textarea name="Comment" class="form-control" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">
-            <i class="bi bi-send"></i> Gửi đánh giá
-        </button>
-    </form>
-}
-else
-{
-    <p class="text-muted">Bạn cần <a asp-controller="Account" asp-action="Login">đăng nhập</a> để đánh giá.</p>
-}
+    .card-img-top:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease;
+    }
+
+    .border {
+        border-color: #e0e0e0 !important;
+    }
+
+    .text-warning i {
+        color: #ffc107;
+    }
+</style>

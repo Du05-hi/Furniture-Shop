@@ -18,7 +18,9 @@ namespace FurnitureShop.Data
 
         // ✅ Thêm giỏ hàng
         public DbSet<CartItem> CartItems { get; set; }
-    
+        public DbSet<Coupon> Coupons { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

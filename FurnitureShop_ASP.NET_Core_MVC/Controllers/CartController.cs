@@ -17,7 +17,7 @@ namespace FurnitureShop.Controllers
             _db = db;
         }
 
-        // Xem giỏ hàng
+        // 🛒 Xem giỏ hàng
         public async Task<IActionResult> Index()
         {
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
@@ -25,10 +25,11 @@ namespace FurnitureShop.Controllers
                 .Include(c => c.Product)
                 .Where(c => c.UserId == userId)
                 .ToListAsync();
+
             return View(cart);
         }
 
-        // Thêm vào giỏ hàng
+        // ➕ Thêm vào giỏ hàng
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Add(int productId, int quantity = 1)
@@ -56,7 +57,7 @@ namespace FurnitureShop.Controllers
             return RedirectToAction("Index");
         }
 
-        // Xóa khỏi giỏ hàng
+        // ❌ Xóa khỏi giỏ hàng
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Remove(int id)
@@ -67,6 +68,37 @@ namespace FurnitureShop.Controllers
                 _db.CartItems.Remove(item);
                 await _db.SaveChangesAsync();
             }
+            return RedirectToAction("Index");
+        }
+
+        // 💸 Áp dụng mã giảm giá
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ApplyCoupon(string couponCode)
+        {
+            if (string.IsNullOrWhiteSpace(couponCode))
+            {
+                TempData["Error"] = "Vui lòng nhập mã giảm giá.";
+                return RedirectToAction("Index");
+            }
+
+            // Tìm mã trong DB (chỉ nhận mã còn hạn)
+            var coupon = await _db.Coupons
+                .FirstOrDefaultAsync(c => c.Code == couponCode &&
+                                     (c.ExpiryDate == null || c.ExpiryDate >= DateTime.Now));
+
+            if (coupon == null)
+            {
+                TempData["Error"] = "Mã giảm giá không hợp lệ hoặc đã hết hạn.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu thông tin vào Session để hiển thị và tính toán
+            HttpContext.Session.SetString("AppliedCoupon", coupon.Code);
+            HttpContext.Session.SetString("DiscountPercent", coupon.DiscountPercent.ToString());
+
+            TempData["Success"] = $"Áp dụng mã '{coupon.Code}' thành công! Giảm {coupon.DiscountPercent}%.";
+
             return RedirectToAction("Index");
         }
     }

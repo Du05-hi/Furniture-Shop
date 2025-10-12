@@ -3,114 +3,6 @@
   "WorkspaceRootPath": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\reviews\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\reviews\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\admindetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\admindetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\adminproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\adminproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\fix-ef.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\fix-ef.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\furnitureshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\furnitureshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -127,8 +19,184 @@
       "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\data\\seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\data\\seed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\coupons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\coupons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\coupons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\coupons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\coupons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\coupons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\couponscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\coupons\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\coupons\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\migrations\\20251007135646_addcoupontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\migrations\\20251007135646_addcoupontable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\reviews\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\reviews\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\reviews\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\admindetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\admindetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\adminproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\adminproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\fix-ef.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\fix-ef.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\furnitureshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\furnitureshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -137,18 +205,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\adminusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -163,12 +219,8 @@
       "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|d:\\k23cnt2-duongchidu-ttcd-project2\\furnitureshop_asp.net_core_mvc\\migrations\\20251007151132_adddescriptiontocoupons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75191DD4-323D-979C-32F0-25AAAF479A24}|FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj|solutionrelative:furnitureshop_asp.net_core_mvc\\migrations\\20251007151132_adddescriptiontocoupons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,24 +230,179 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 39,
+          "SelectedChildIndex": 33,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-09T17:23:48.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\RegisterViewModel.cs",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T17:23:26.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\LoginViewModel.cs",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T17:22:58.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Apply.cshtml",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Apply.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Apply.cshtml",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Apply.cshtml",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Apply.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T15:21:43.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20251007151132_AddDescriptionToCoupons.cs",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007151132_AddDescriptionToCoupons.cs",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007151132_AddDescriptionToCoupons.cs",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007151132_AddDescriptionToCoupons.cs",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007151132_AddDescriptionToCoupons.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T15:11:33.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T14:19:24.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Edit.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Edit.cshtml",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Edit.cshtml",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Edit.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T14:07:58.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Create.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Create.cshtml",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Create.cshtml",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Create.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T14:07:19.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Index.cshtml",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Index.cshtml",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Index.cshtml",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Coupons\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-07T14:06:49.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CouponsController.cs",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CouponsController.cs",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CouponsController.cs",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CouponsController.cs",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CouponsController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAQwJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:57:53.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20251007135646_AddCouponTable.cs",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007135646_AddCouponTable.cs",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007135646_AddCouponTable.cs",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007135646_AddCouponTable.cs",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Migrations\\20251007135646_AddCouponTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:56:47.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\Coupon.cs",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Coupon.cs",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\Coupon.cs",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Coupon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:55:16.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T14:31:10.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T12:34:38.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T12:34:38.849Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Reviews\\Index.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Reviews\\Index.cshtml",
@@ -203,12 +410,11 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Reviews\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T13:08:58.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:08:58.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 38,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Reviews\\Create.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Reviews\\Create.cshtml",
@@ -216,12 +422,11 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Reviews\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T13:03:03.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T13:03:03.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 39,
               "Title": "ReviewsController.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\ReviewsController.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\ReviewsController.cs",
@@ -229,12 +434,11 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\ReviewsController.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAowC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T12:55:45.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T12:55:45.485Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 41,
               "Title": "AdminDetails.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\AdminDetails.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\AdminDetails.cshtml",
@@ -242,50 +446,47 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\AdminDetails.cshtml",
               "ViewState": "AgIAADEAAAAAAAAAAAAqwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T12:43:47.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T12:43:47.931Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Checkout.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Checkout.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Checkout.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Checkout.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwC0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T12:38:01.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T12:38:01.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Cart\\Index.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Cart\\Index.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwEYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T17:13:52.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T17:13:52.674Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "CartController.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CartController.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CartController.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\CartController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwEkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T17:12:53.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "CartItem.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\CartItem.cs",
@@ -297,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 45,
               "Title": "AdminProductsController.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AdminProductsController.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AdminProductsController.cs",
@@ -309,7 +510,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 44,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Index.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Index.cshtml",
@@ -317,48 +518,47 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Index.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T16:43:15.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:43:15.521Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Admin\\Dashboard.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Admin\\Dashboard.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAqwLEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-26T16:29:54.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 17,
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AdminController.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T16:28:40.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Dashboard.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Dashboard.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAqwGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-26T16:24:33.632Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 46,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Delete.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Delete.cshtml",
@@ -370,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 43,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Details.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Details.cshtml",
@@ -378,12 +578,11 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\Details.cshtml",
               "ViewState": "AgIAACAAAAAAAAAAAAAAwDsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T16:03:16.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:03:16.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 42,
               "Title": "AdminIndex.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\AdminIndex.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\AdminIndex.cshtml",
@@ -391,25 +590,23 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Orders\\AdminIndex.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T16:03:00.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:03:00.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\OrdersController.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAYwNgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T16:01:12.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T16:01:12.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 47,
               "Title": "Fix-EF.ps1",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Fix-EF.ps1",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Fix-EF.ps1",
@@ -421,7 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 48,
               "Title": "FurnitureShop.csproj",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\FurnitureShop.csproj",
@@ -433,67 +630,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 0,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Register.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T15:11:25.977Z"
+              "WhenOpened": "2025-09-26T15:11:25.977Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Login.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-26T15:11:11.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 2,
               "Title": "RegisterVm.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\RegisterVm.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\RegisterVm.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\RegisterVm.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\RegisterVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T15:10:27.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 3,
               "Title": "LoginVm.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\LoginVm.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\LoginVm.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\LoginVm.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\ViewModels\\LoginVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T15:10:06.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 15,
               "Title": "Seed.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Data\\Seed.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Data\\Seed.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Data\\Seed.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Data\\Seed.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAD6AgAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T15:00:50.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 49,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\OrderDetail.cs",
@@ -505,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 40,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\Review.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Review.cs",
@@ -513,12 +711,11 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Review.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:33:11.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:33:11.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 50,
               "Title": "Payment.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Payment.cs",
@@ -530,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 30,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\Order.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Order.cs",
@@ -542,57 +739,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 28,
               "Title": "Product.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\Product.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Product.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\Product.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T14:31:37.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 32,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Models\\AppUser.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Models\\AppUser.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T14:31:21.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 33,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Data\\AppDbContext.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Data\\AppDbContext.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:30:14.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:30:14.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Program.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Program.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Program.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBwAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T14:28:43.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:28:43.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\appsettings.json",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\appsettings.json",
@@ -600,12 +795,11 @@
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-26T14:28:10.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:28:10.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 51,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\AdminUsers\\Index.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\AdminUsers\\Index.cshtml",
@@ -617,33 +811,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Index.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Index.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Index.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwD8AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAwOMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T14:07:30.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:07:30.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 35,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Details.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Details.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Details.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T14:07:28.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:07:28.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 52,
               "Title": "_SampleStrip.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\_SampleStrip.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Products\\_SampleStrip.cshtml",
@@ -655,7 +847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 53,
               "Title": "site.css",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\wwwroot\\css\\site.css",
@@ -667,38 +859,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAqwFcAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-26T14:04:12.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T14:04:12.286Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANYAAAAAAAAAAAAAwOgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-26T14:02:40.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 4,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\K23CNT2-DuongChiDu-TTCD-ProJect2\\FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AccountController.cs",
               "RelativeToolTip": "FurnitureShop_ASP.NET_Core_MVC\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T13:30:23.99Z"
             }

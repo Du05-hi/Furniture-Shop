@@ -1,0 +1,55 @@
+﻿@model FurnitureShop.Models.Coupon
+@{
+    ViewData["Title"] = "Thêm mã giảm giá mới";
+}
+
+<div class="container mt-5">
+    <h2 class="fw-bold text-uppercase mb-4">
+        <i class="bi bi-plus-circle"></i> Thêm Mã Giảm Giá
+    </h2>
+
+    <form asp-action="Create" method="post" class="shadow-sm p-4 bg-light rounded">
+        @Html.AntiForgeryToken()
+
+        <div class="mb-3">
+            <label asp-for="Code" class="form-label fw-semibold"></label>
+            <input asp-for="Code" class="form-control" placeholder="Nhập mã giảm giá..." />
+            <span asp-validation-for="Code" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DiscountPercent" class="form-label fw-semibold"></label>
+            <input asp-for="DiscountPercent" class="form-control" type="number" min="1" max="100" />
+            <span asp-validation-for="DiscountPercent" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="ExpiryDate" class="form-label fw-semibold"></label>
+            <input asp-for="ExpiryDate" class="form-control" type="date" />
+            <span asp-validation-for="ExpiryDate" class="text-danger"></span>
+        </div>
+
+        <div class="form-check form-switch mb-3">
+            <input asp-for="IsActive" class="form-check-input" type="checkbox" />
+            <label asp-for="IsActive" class="form-check-label"></label>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label fw-semibold"></label>
+            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Ghi chú, mô tả..."></textarea>
+        </div>
+
+        <div class="text-end">
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Quay lại
+            </a>
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-save"></i> Lưu lại
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

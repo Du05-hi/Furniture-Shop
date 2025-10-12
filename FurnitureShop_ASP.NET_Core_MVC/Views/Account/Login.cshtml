@@ -1,23 +1,81 @@
 @model FurnitureShop.ViewModels.LoginVm
+
 @{
     ViewData["Title"] = "Đăng nhập";
 }
 
-<div class="container py-5">
-    <h2>Đăng nhập</h2>
-    <form asp-action="Login" method="post">
-        @Html.AntiForgeryToken()
-        <div class="mb-3">
-            <label asp-for="UserName" class="form-label"></label>
-            <input asp-for="UserName" class="form-control" />
-            <span asp-validation-for="UserName" class="text-danger"></span>
+<style>
+    body {
+        background: url('/images/bg-login.jpg') center/cover no-repeat fixed;
+        backdrop-filter: blur(6px);
+        min-height: 100vh;
+    }
+
+    .login-card {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 18px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+
+        .login-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+        }
+
+    .login-btn {
+        background: linear-gradient(90deg, #1d976c, #2f9d91);
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .login-btn:hover {
+            background: linear-gradient(90deg, #159957, #155799);
+            transform: scale(1.03);
+        }
+
+    .form-floating label {
+        color: #555;
+    }
+</style>
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="login-card p-4" style="width: 400px;">
+        <div class="text-center mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png"
+                 width="70" alt="login-icon" class="mb-3" />
+            <h3 class="fw-bold text-dark text-uppercase">Đăng nhập</h3>
+            <p class="text-muted small">Chào mừng trở lại với <strong>FurnitureShop</strong></p>
         </div>
-        <div class="mb-3">
-            <label asp-for="Password" class="form-label"></label>
-            <input asp-for="Password" class="form-control" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </div>
-        <button type="submit" class="btn btn-primary">Đăng nhập</button>
-        <a asp-action="Register" class="btn btn-link">Đăng ký</a>
-    </form>
+
+        <form asp-action="Login" method="post">
+            @Html.AntiForgeryToken()
+
+            <div class="form-floating mb-3">
+                <input asp-for="UserName" class="form-control" placeholder="Tên đăng nhập" />
+                <label asp-for="UserName"><i class="bi bi-person-circle"></i> Tên đăng nhập</label>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating mb-4">
+                <input asp-for="Password" type="password" class="form-control" placeholder="Mật khẩu" />
+                <label asp-for="Password"><i class="bi bi-lock-fill"></i> Mật khẩu</label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn login-btn w-100 py-2 fw-bold text-white shadow-sm">
+                <i class="bi bi-box-arrow-in-right"></i> Đăng nhập
+            </button>
+
+            <div class="text-center mt-3">
+                <a asp-action="Register" class="text-decoration-none fw-semibold text-primary">
+                    <i class="bi bi-person-plus"></i> Tạo tài khoản mới
+                </a>
+            </div>
+        </form>
+    </div>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

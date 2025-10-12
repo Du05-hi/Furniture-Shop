@@ -5,56 +5,191 @@
 
 <h1 class="mb-4 fw-bold text-center">🛋️ Danh sách sản phẩm</h1>
 
+<!-- 🎟️ Mã giảm giá nổi bật -->
+<div class="alert alert-success shadow-sm text-center fw-semibold py-3 mb-4 promo-banner">
+    <i class="bi bi-ticket-perforated fs-4 text-danger"></i>
+    🔥 <span>Khuyến mãi HOT:</span>
+    <strong class="text-uppercase text-danger">
+        @{
+            var randomCoupons = new[] { "SALE10", "FURNI20", "NOITHAT15", "VIP5" };
+            var random = new Random();
+            var coupon = randomCoupons[random.Next(randomCoupons.Length)];
+        }
+        @coupon
+    </strong>
+    — Giảm <strong>@(random.Next(5, 20))%</strong> cho đơn hàng hôm nay!
+    <a asp-controller="Coupons" asp-action="Index" class="btn btn-sm btn-warning ms-2 shadow-sm">
+        <i class="bi bi-gift"></i> Xem tất cả mã
+    </a>
+</div>
+
+<!-- 🔍 Bộ lọc tìm kiếm -->
+<form method="get" class="row g-3 mb-4 bg-light p-3 rounded shadow-sm">
+    <div class="col-md-3">
+        <input type="text" name="search" value="@ViewBag.Search" class="form-control" placeholder="Tìm sản phẩm...">
+    </div>
+
+    <div class="col-md-2">
+        <input type="number" step="0.01" name="minPrice" value="@ViewBag.MinPrice" class="form-control" placeholder="Giá từ">
+    </div>
+
+    <div class="col-md-2">
+        <input type="number" step="0.01" name="maxPrice" value="@ViewBag.MaxPrice" class="form-control" placeholder="Đến">
+    </div>
+
+    <div class="col-md-3">
+        <select name="sort" class="form-select">
+            <option value="">Mới nhất</option>
+            <option value="price_asc" selected="@(ViewBag.Sort == "price_asc")">Giá tăng dần</option>
+            <option value="price_desc" selected="@(ViewBag.Sort == "price_desc")">Giá giảm dần</option>
+        </select>
+    </div>
+
+    <div class="col-md-2 text-end">
+        <button type="submit" class="btn btn-primary w-100">Lọc</button>
+    </div>
+</form>
+
+<!-- 🧮 Thông tin trang -->
+@if (ViewBag.TotalPages > 0)
+{
+    <p class="text-center text-muted">
+        Hiển thị <strong>@Model.Count()</strong> / <strong>@ViewBag.TotalItems</strong> sản phẩm —
+        Trang <strong>@ViewBag.Page</strong> / <strong>@ViewBag.TotalPages</strong>
+    </p>
+}
+
+<!-- 📦 Danh sách sản phẩm -->
 <div class="row g-4">
-    @foreach (var p in Model)
+    @if (Model != null && Model.Any())
     {
-        <div class="col-md-4 col-sm-6">
-            <div class="card h-100 shadow-sm border-0 rounded-3 product-card">
-                <!-- Ảnh sản phẩm với hiệu ứng zoom -->
-                <div class="position-relative overflow-hidden rounded-top">
-                    <img src="@(string.IsNullOrWhiteSpace(p.ImageUrl) ? "/images/no-image.png" : p.ImageUrl)"
-                         class="card-img-top img-hover"
-                         alt="@p.Name"
-                         data-bs-toggle="tooltip" title="@p.Name" />
-                    <!-- Badge -->
-                    <span class="badge bg-danger position-absolute top-0 start-0 m-2 shadow">Mới</span>
-                </div>
+        @foreach (var p in Model)
+        {
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm border-0 rounded-3 product-card">
+                    <!-- Ảnh sản phẩm -->
+                    <div class="position-relative overflow-hidden rounded-top">
+                        <img src="@(string.IsNullOrWhiteSpace(p.ImageUrl) ? "/images/no-image.png" : p.ImageUrl)"
+                             class="card-img-top img-hover"
+                             alt="@p.Name"
+                             data-bs-toggle="tooltip" title="@p.Name" />
+                        <span class="badge bg-danger position-absolute top-0 start-0 m-2 shadow">Mới</span>
+                    </div>
 
-                <div class="card-body d-flex flex-column">
-                    <!-- Tên sản phẩm -->
-                    <h5 class="card-title text-truncate" data-bs-toggle="tooltip" title="@p.Name">
-                        @p.Name
-                    </h5>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-truncate" data-bs-toggle="tooltip" title="@p.Name">
+                            @p.Name
+                        </h5>
 
-                    <!-- Mô tả -->
-                    <p class="card-text text-truncate text-muted" data-bs-toggle="tooltip" title="@p.Description">
-                        @p.Description
-                    </p>
+                        <p class="card-text text-truncate text-muted" data-bs-toggle="tooltip" title="@p.Description">
+                            @p.Description
+                        </p>
 
-                    <div class="mt-auto d-flex justify-content-between align-items-center">
-                        <span class="fw-bold text-primary fs-5">@p.Price.ToString("N0") đ</span>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <!-- ✅ Hiển thị giá không lỗi -->
+                            <span class="fw-bold text-primary fs-5">@($"{p.Price:N0} đ")</span>
 
-                        <!-- Thêm giỏ -->
-                        <form asp-controller="Cart" asp-action="Add" method="post" class="d-inline">
-                            <input type="hidden" name="productId" value="@p.Id" />
-                            @Html.AntiForgeryToken()
-                            <button type="submit" class="btn btn-sm btn-success">
-                                <i class="bi bi-cart-plus"></i> Thêm giỏ
-                            </button>
-                        </form>
+                            <!-- Thêm giỏ -->
+                            <form asp-controller="Cart" asp-action="Add" method="post" class="d-inline">
+                                <input type="hidden" name="productId" value="@p.Id" />
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-success">
+                                    <i class="bi bi-cart-plus"></i> Thêm giỏ
+                                </button>
+                            </form>
 
-                        <!-- Chi tiết -->
-                        <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@p.Id">
-                            <i class="bi bi-eye"></i> Chi tiết
-                        </a>
+                            <!-- Chi tiết -->
+                            <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@p.Id">
+                                <i class="bi bi-eye"></i> Chi tiết
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-info text-center">Không tìm thấy sản phẩm nào phù hợp.</div>
     }
 </div>
 
+<!-- 📑 Phân trang -->
+@if (ViewBag.TotalPages > 1)
+{
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            @if (ViewBag.Page > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-search="@ViewBag.Search"
+                       asp-route-minPrice="@ViewBag.MinPrice"
+                       asp-route-maxPrice="@ViewBag.MaxPrice"
+                       asp-route-sort="@ViewBag.Sort"
+                       asp-route-page="@(ViewBag.Page - 1)">
+                        &laquo; Trước
+                    </a>
+                </li>
+            }
+
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="page-item @(i == ViewBag.Page ? "active" : "")">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-search="@ViewBag.Search"
+                       asp-route-minPrice="@ViewBag.MinPrice"
+                       asp-route-maxPrice="@ViewBag.MaxPrice"
+                       asp-route-sort="@ViewBag.Sort"
+                       asp-route-page="@i">@i</a>
+                </li>
+            }
+
+            @if (ViewBag.Page < ViewBag.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-search="@ViewBag.Search"
+                       asp-route-minPrice="@ViewBag.MinPrice"
+                       asp-route-maxPrice="@ViewBag.MaxPrice"
+                       asp-route-sort="@ViewBag.Sort"
+                       asp-route-page="@(ViewBag.Page + 1)">
+                        Sau &raquo;
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
+
 <style>
+    /* 🌟 Animation banner coupon */
+    @@keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.05);
+            opacity: 0.85;
+        }
+
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .promo-banner {
+        animation: pulse 2s infinite;
+        border-left: 6px solid #28a745;
+        background: linear-gradient(90deg, #eaffea, #f8fff8);
+    }
+
     .product-card {
         transition: transform 0.2s ease, box-shadow 0.3s ease;
     }
@@ -75,11 +210,26 @@
     .product-card:hover .img-hover {
         transform: scale(1.08);
     }
+
+    .pagination .page-link {
+        color: #0d6efd;
+        border: none;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #0d6efd;
+        color: white;
+        border-radius: 6px;
+    }
+
+    .pagination .page-link:hover {
+        background-color: #e7f0ff;
+    }
 </style>
 
 @section Scripts {
     <script>
-        // Kích hoạt tooltip bootstrap
+        // Tooltip Bootstrap
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)

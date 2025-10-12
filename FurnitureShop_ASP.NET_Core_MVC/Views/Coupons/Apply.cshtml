@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Áp dụng mã giảm giá";
+}
+
+<div class="container mt-5">
+    <h3 class="fw-bold mb-3">🎟️ Áp dụng mã giảm giá</h3>
+
+    <form asp-controller="Coupons" asp-action="Apply" method="post" class="bg-light p-4 rounded shadow-sm">
+        <div class="input-group">
+            <input type="text" name="code" class="form-control" placeholder="Nhập mã giảm giá..." required />
+            <button type="submit" class="btn btn-primary">Áp dụng</button>
+        </div>
+    </form>
+</div>

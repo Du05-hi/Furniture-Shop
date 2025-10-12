@@ -3,6 +3,16 @@
 @{
     ViewData["Title"] = "Giỏ hàng của bạn";
     var total = Model.Sum(i => i.Product.Price * i.Quantity);
+
+    decimal discountPercent = 0;
+    var discountStr = Context.Session.GetString("DiscountPercent");
+    if (!string.IsNullOrEmpty(discountStr))
+    {
+        discountPercent = Convert.ToDecimal(discountStr);
+    }
+
+    decimal discountValue = total * discountPercent / 100;
+    decimal finalTotal = total - discountValue;
 }
 
 <h2 class="mb-4">🛒 Giỏ hàng của bạn</h2>
@@ -15,6 +25,41 @@
 }
 else
 {
+    <!-- Áp mã giảm giá -->
+    <div class="card mb-4">
+        <div class="card-header bg-light">
+            <strong>Áp dụng mã giảm giá</strong>
+        </div>
+        <div class="card-body">
+            <form asp-controller="Cart" asp-action="ApplyCoupon" method="post" class="row g-2">
+                <div class="col-md-8">
+                    <input type="text" name="couponCode" class="form-control" placeholder="Nhập mã giảm giá..." />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary w-100">Áp dụng</button>
+                </div>
+            </form>
+
+            @if (TempData["Error"] != null)
+            {
+                <div class="text-danger mt-2">@TempData["Error"]</div>
+            }
+            @if (TempData["Success"] != null)
+            {
+                <div class="text-success mt-2">@TempData["Success"]</div>
+            }
+
+            @if (Context.Session.GetString("AppliedCoupon") != null)
+            {
+                <div class="alert alert-info mt-3">
+                    Đã áp dụng mã: <strong>@Context.Session.GetString("AppliedCoupon")</strong>
+                    (giảm @discountPercent%)
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
     <table class="table table-striped align-middle">
         <thead class="table-dark">
             <tr>
@@ -55,9 +100,22 @@ else
                 <td colspan="4" class="text-end">Tổng cộng:</td>
                 <td colspan="2">@total.ToString("N0") đ</td>
             </tr>
+
+            @if (discountPercent > 0)
+            {
+                <tr class="fw-bold text-success">
+                    <td colspan="4" class="text-end">Giảm giá (@discountPercent%):</td>
+                    <td colspan="2">-@discountValue.ToString("N0") đ</td>
+                </tr>
+                <tr class="fw-bold text-primary">
+                    <td colspan="4" class="text-end">Thành tiền sau giảm:</td>
+                    <td colspan="2">@finalTotal.ToString("N0") đ</td>
+                </tr>
+            }
         </tfoot>
     </table>
 
+    <!-- Nút hành động -->
     <div class="d-flex justify-content-between">
         <a asp-controller="Products" asp-action="Index" class="btn btn-secondary">
             <i class="bi bi-arrow-left"></i> Tiếp tục mua sắm

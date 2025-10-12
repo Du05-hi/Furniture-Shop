@@ -2,10 +2,22 @@
 @{
     ViewData["Title"] = "Thanh toán";
     var total = Model.Sum(i => i.Product.Price * i.Quantity);
+
+    // 🧩 Lấy mã giảm giá từ Session
+    decimal discountPercent = 0;
+    var discountStr = Context.Session.GetString("DiscountPercent");
+    if (!string.IsNullOrEmpty(discountStr))
+    {
+        discountPercent = Convert.ToDecimal(discountStr);
+    }
+
+    decimal discountValue = total * discountPercent / 100;
+    decimal finalTotal = total - discountValue;
 }
 
 <h2 class="mb-4">💳 Thanh toán</h2>
 
+<!-- Bảng sản phẩm -->
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -31,9 +43,31 @@
             <td colspan="3" class="text-end">Tổng cộng:</td>
             <td>@total.ToString("N0") đ</td>
         </tr>
+
+        @* 🧾 Nếu có mã giảm giá thì hiển thị thêm phần này *@
+        @if (discountPercent > 0)
+        {
+            <tr class="fw-bold text-success">
+                <td colspan="3" class="text-end">Giảm giá (@discountPercent%):</td>
+                <td>-@discountValue.ToString("N0") đ</td>
+            </tr>
+            <tr class="fw-bold text-primary">
+                <td colspan="3" class="text-end">Thành tiền sau giảm:</td>
+                <td>@finalTotal.ToString("N0") đ</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="alert alert-info mb-0">
+                        Mã giảm giá đang áp dụng:
+                        <strong>@Context.Session.GetString("AppliedCoupon")</strong>
+                    </div>
+                </td>
+            </tr>
+        }
     </tfoot>
 </table>
 
+<!-- Nút xác nhận -->
 <form asp-action="CheckoutConfirm" method="post">
     @Html.AntiForgeryToken()
     <button type="submit" class="btn btn-success">

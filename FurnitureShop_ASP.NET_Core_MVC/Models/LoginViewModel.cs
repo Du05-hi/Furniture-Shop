@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FurnitureShop.ViewModels
+namespace FurnitureShop.Models
 {
-    public class LoginVm
+    public class LoginViewModel
     {
         [Required(ErrorMessage = "Tên đăng nhập không được bỏ trống")]
         [Display(Name = "Tên đăng nhập")]

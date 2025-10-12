@@ -3,18 +3,149 @@
     ViewData["Title"] = "Trang chủ";
 }
 
-<!-- 🏠 Hero Section -->
-<div class="p-5 mb-4 bg-light rounded-3 shadow-sm" style="background: url('/images/banner.jpg') center/cover no-repeat;">
-    <div class="container py-5 text-center text-white">
-        <h1 class="display-4 fw-bold">✨ Furniture Shop ✨</h1>
-        <p class="lead">Mang đến cho bạn những sản phẩm nội thất đẹp, hiện đại và tiện nghi.</p>
-        <a asp-controller="Products" asp-action="Index" class="btn btn-primary btn-lg mt-3">
-            <i class="bi bi-bag-check"></i> Mua sắm ngay
+<!-- 🌟 Hero Section (hiệu ứng parallax + fade-in) -->
+<section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+
+    <div class="content text-center">
+        <h1 class="display-3 fw-bold mb-3 animate-fade">✨ Furniture Shop ✨</h1>
+        <p class="lead mb-4 animate-fade-delay">Mang đến cho bạn không gian sống hiện đại, sang trọng và tinh tế.</p>
+        <a asp-controller="Products" asp-action="Index" class="btn btn-primary btn-lg px-4 py-2 shadow-lg animate-fade-delay2">
+            <i class="bi bi-bag-heart"></i> Mua sắm ngay
         </a>
     </div>
-</div>
+</section>
+
+<style>
+    /* 🏔️ Phần nền Parallax */
+    .hero-section {
+        position: relative;
+        height: 80vh;
+        background: url('/images/banner.jpg') center center / cover no-repeat fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+        /* 🕶️ Overlay mờ trên ảnh */
+        .hero-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 1;
+        }
+
+        /* 📝 Nội dung chính */
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1.5s ease;
+        }
+
+    /* 🌈 Hiệu ứng fade-in */
+    @@keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+
+    /* Các lớp trễ hiệu ứng */
+    .animate-fade {
+        animation: fadeInUp 1.2s ease forwards;
+    }
+
+    .animate-fade-delay {
+        animation: fadeInUp 1.8s ease forwards;
+        opacity: 0;
+        animation-delay: 0.3s;
+    }
+
+    .animate-fade-delay2 {
+        animation: fadeInUp 2.2s ease forwards;
+        opacity: 0;
+        animation-delay: 0.6s;
+    }
+
+    /* 🔘 Nút mua sắm */
+    .hero-section .btn-primary {
+        font-size: 1.2rem;
+        border-radius: 50px;
+        background: linear-gradient(90deg, #007bff, #00c4ff);
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .hero-section .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 195, 255, 0.5);
+        }
+</style>
+
 
 <div class="container mt-5">
+
+    <!-- 🎟️ Coupon nổi bật -->
+    <div class="alert alert-success text-center shadow-sm py-3 fw-semibold coupon-banner">
+        <i class="bi bi-ticket-perforated fs-4 text-danger"></i>
+        🔥 Mã giảm giá hôm nay:
+        <strong class="text-uppercase text-danger">
+            @{
+                var randomCoupons = new[] { "SALE10", "VIP5", "FURNI15", "NOITHAT20" };
+                var random = new Random();
+                var coupon = randomCoupons[random.Next(randomCoupons.Length)];
+            }
+            @coupon
+        </strong>
+        – Giảm <strong>@(random.Next(5, 20))%</strong> cho đơn hàng hôm nay!
+        <a asp-controller="Coupons" asp-action="Index" class="btn btn-sm btn-warning ms-2 shadow-sm">
+            <i class="bi bi-gift"></i> Xem tất cả mã
+        </a>
+    </div>
+
+    <!-- 🔍 Thanh tìm kiếm và lọc -->
+    <form asp-controller="Home" asp-action="Index" method="get" class="mb-4 bg-light p-3 rounded shadow-sm">
+        <div class="row g-2 align-items-center">
+            <div class="col-md-4">
+                <input type="text" name="search" class="form-control" placeholder="Tìm sản phẩm..."
+                       value="@ViewBag.Search" />
+            </div>
+            <div class="col-md-2">
+                <input type="number" name="minPrice" class="form-control" placeholder="Giá tối thiểu"
+                       value="@ViewBag.MinPrice" />
+            </div>
+            <div class="col-md-2">
+                <input type="number" name="maxPrice" class="form-control" placeholder="Giá tối đa"
+                       value="@ViewBag.MaxPrice" />
+            </div>
+            <div class="col-md-3">
+                <select name="sort" class="form-select">
+                    <option value="">Sắp xếp: Mới nhất</option>
+                    <option value="price_asc" selected="@(ViewBag.Sort=="price_asc")">Giá tăng dần</option>
+                    <option value="price_desc" selected="@(ViewBag.Sort=="price_desc")">Giá giảm dần</option>
+                </select>
+            </div>
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
 
     <!-- 🌟 Carousel sản phẩm nổi bật -->
     <div id="highlightCarousel" class="carousel slide mb-5 shadow-sm rounded" data-bs-ride="carousel">
@@ -37,8 +168,8 @@
         </button>
     </div>
 
-    <!-- 🛒 Danh sách sản phẩm mới nhất -->
-    <h2 class="mb-4">🆕 Sản phẩm mới nhất</h2>
+    <!-- 🛒 Danh sách sản phẩm -->
+    <h2 class="mb-4 fw-bold text-uppercase">🆕 Sản phẩm mới nhất</h2>
 
     @if (Model != null && Model.Any())
     {
@@ -46,15 +177,11 @@
             @foreach (var p in Model.Take(6))
             {
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm border-0 rounded-3">
-                        <!-- Ảnh sản phẩm với hiệu ứng -->
+                    <div class="card h-100 shadow-sm border-0 rounded-3 product-card">
                         <div class="position-relative overflow-hidden rounded">
                             <img src="@(string.IsNullOrWhiteSpace(p.ImageUrl) ? "/images/no-image.png" : p.ImageUrl)"
                                  class="card-img-top img-fluid"
-                                 alt="@p.Name"
-                                 style="transition: transform 0.4s ease; cursor: pointer;"
-                                 onmouseover="this.style.transform='scale(1.08)'"
-                                 onmouseout="this.style.transform='scale(1)'" />
+                                 alt="@p.Name" />
                             <span class="badge bg-danger position-absolute top-0 start-0 m-2 shadow">Mới</span>
                         </div>
 
@@ -63,9 +190,9 @@
                             <p class="card-text text-truncate" data-bs-toggle="tooltip" title="@p.Description">@p.Description</p>
 
                             <div class="mt-auto d-flex justify-content-between align-items-center">
-                                <span class="fw-bold text-primary">@p.Price.ToString("N0") đ</span>
+                                <span class="fw-bold text-primary fs-5">@($"{p.Price:N0} đ")</span>
 
-                                <form asp-controller="Cart" asp-action="Add" method="post" class="d-inline">
+                                <form asp-controller="Cart" asp-action="Add" method="post" class="d-inline add-to-cart-form">
                                     <input type="hidden" name="productId" value="@p.Id" />
                                     @Html.AntiForgeryToken()
                                     <button type="submit" class="btn btn-sm btn-success">
@@ -85,16 +212,69 @@
     }
     else
     {
-        <div class="alert alert-info">Hiện chưa có sản phẩm nào để hiển thị.</div>
+        <div class="alert alert-info text-center">Hiện chưa có sản phẩm nào để hiển thị.</div>
     }
+</div>
 
+<!-- ✅ Toast thông báo -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cartToast" class="toast align-items-center text-bg-success border-0" role="alert">
+        <div class="d-flex">
+            <div class="toast-body fw-semibold"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
 </div>
 
 @section Scripts {
     <script>
-        // Kích hoạt tooltip bootstrap
+        // Tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el) })
+
+        // Toast giỏ hàng
+        const cartToast = document.getElementById('cartToast');
+        const cartToastBody = cartToast.querySelector('.toast-body');
+
+        document.querySelectorAll('.add-to-cart-form').forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                fetch(form.action, {
+                    method: "POST",
+                    body: formData,
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                }).then(() => {
+                    const productName = form.closest('.card').querySelector('.card-title').textContent;
+                    cartToastBody.textContent = `Đã thêm "${productName}" vào giỏ hàng!`;
+                    const toast = new bootstrap.Toast(cartToast);
+                    toast.show();
+                });
+            });
+        });
     </script>
 }
-    
+
+
+<style>
+    .product-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* 🌈 Coupon Banner animation */
+    @@keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.05); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+
+    .coupon-banner {
+        background: linear-gradient(90deg, #eaffea, #ffffff);
+        border-left: 5px solid #28a745;
+        animation: pulse 2s infinite;
+    }
+</style>

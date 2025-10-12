@@ -1,74 +1,101 @@
 ﻿@{
-    ViewData["Title"] = "Thống kê đơn hàng";
+    ViewData["Title"] = "Thống kê doanh thu & đơn hàng";
 }
 
-<h2 class="mb-4"><i class="bi bi-bar-chart-line"></i> @ViewData["Title"]</h2>
+<div class="container mt-5">
+    <h2 class="fw-bold mb-4 text-uppercase">
+        <i class="bi bi-graph-up-arrow"></i> Thống kê Doanh thu & Trạng thái Đơn hàng
+    </h2>
 
-<div class="row mb-4">
-    <div class="col-md-3">
-        <div class="card text-bg-primary shadow">
-            <div class="card-body text-center">
-                <h5 class="card-title">Tổng đơn</h5>
-                <p class="display-6">@ViewBag.Total</p>
+    <div class="row mb-4 text-center">
+        <div class="col-md-3">
+            <div class="card bg-light shadow-sm p-3">
+                <h5>Tổng đơn hàng</h5>
+                <h3 class="text-primary">@ViewBag.Total</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning-subtle shadow-sm p-3">
+                <h5>Đang xử lý</h5>
+                <h3 class="text-warning">@ViewBag.Pending</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success-subtle shadow-sm p-3">
+                <h5>Hoàn thành</h5>
+                <h3 class="text-success">@ViewBag.Completed</h3>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger-subtle shadow-sm p-3">
+                <h5>Đã hủy</h5>
+                <h3 class="text-danger">@ViewBag.Cancelled</h3>
             </div>
         </div>
     </div>
-    <div class="col-md-3">
-        <div class="card text-bg-warning shadow">
-            <div class="card-body text-center">
-                <h5 class="card-title">Đang xử lý</h5>
-                <p class="display-6">@ViewBag.Pending</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card text-bg-success shadow">
-            <div class="card-body text-center">
-                <h5 class="card-title">Hoàn thành</h5>
-                <p class="display-6">@ViewBag.Completed</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-        <div class="card text-bg-danger shadow">
-            <div class="card-body text-center">
-                <h5 class="card-title">Đã hủy</h5>
-                <p class="display-6">@ViewBag.Cancelled</p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Biểu đồ Chart.js -->
-<div class="card shadow">
-    <div class="card-body">
-        <canvas id="ordersChart" height="120"></canvas>
+    <!-- Biểu đồ doanh thu -->
+    <div class="card shadow-sm p-4 mb-5">
+        <h5 class="fw-semibold text-primary mb-3">
+            <i class="bi bi-bar-chart-line"></i> Doanh thu theo tháng
+        </h5>
+        <canvas id="revenueChart" style="height: 400px;"></canvas>
+    </div>
+
+    <!-- Biểu đồ trạng thái -->
+    <div class="card shadow-sm p-4">
+        <h5 class="fw-semibold text-success mb-3">
+            <i class="bi bi-pie-chart"></i> Tỷ lệ đơn hàng theo trạng thái
+        </h5>
+        <canvas id="statusChart" style="height: 400px;"></canvas>
     </div>
 </div>
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('ordersChart');
 
-        new Chart(ctx, {
-            type: 'doughnut',
+    <script>
+        // Biểu đồ doanh thu
+        new Chart(document.getElementById('revenueChart'), {
+            type: 'bar',
             data: {
-                labels: ['Pending', 'Completed', 'Cancelled'],
+                labels: @Html.Raw(Json.Serialize(ViewBag.Labels)),
                 datasets: [{
-                    data: [@ViewBag.Pending, @ViewBag.Completed, @ViewBag.Cancelled],
-                    backgroundColor: ['#f0ad4e', '#5cb85c', '#d9534f']
+                    label: 'Doanh thu (VNĐ)',
+                    data: @Html.Raw(Json.Serialize(ViewBag.Data)),
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
                 }]
             },
             options: {
                 responsive: true,
-                plugins: {
-                    legend: { position: 'bottom' },
-                    title: {
-                        display: true,
-                        text: 'Phân loại trạng thái đơn hàng'
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: v => v.toLocaleString("vi-VN") + " đ"
+                        }
                     }
                 }
+            }
+        });
+
+        // Biểu đồ tròn trạng thái
+        new Chart(document.getElementById('statusChart'), {
+            type: 'pie',
+            data: {
+                labels: @Html.Raw(Json.Serialize(ViewBag.StatusLabels)),
+                datasets: [{
+                    data: @Html.Raw(Json.Serialize(ViewBag.StatusCounts)),
+                    backgroundColor: [
+                        '#f6c23e', '#1cc88a', '#e74a3b', '#36b9cc'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { position: 'bottom' } }
             }
         });
     </script>

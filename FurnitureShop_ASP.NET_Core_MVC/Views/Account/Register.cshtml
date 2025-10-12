@@ -1,28 +1,82 @@
 @model FurnitureShop.ViewModels.RegisterVm
+
 @{
     ViewData["Title"] = "Đăng ký";
 }
 
-<div class="container py-5">
-    <h2>Đăng ký</h2>
-    <form asp-action="Register" method="post">
-        @Html.AntiForgeryToken()
-        <div class="mb-3">
-            <label asp-for="UserName" class="form-label"></label>
-            <input asp-for="UserName" class="form-control" />
-            <span asp-validation-for="UserName" class="text-danger"></span>
+<style>
+    body {
+        background: url('/images/bg-register.jpg') center/cover no-repeat fixed;
+        backdrop-filter: blur(6px);
+        min-height: 100vh;
+    }
+
+    .register-card {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 18px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+
+        .register-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+        }
+
+    .register-btn {
+        background: linear-gradient(90deg, #2193b0, #6dd5ed);
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .register-btn:hover {
+            background: linear-gradient(90deg, #00b4db, #0083b0);
+            transform: scale(1.03);
+        }
+</style>
+
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="register-card p-4" style="width: 420px;">
+        <div class="text-center mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/483/483361.png"
+                 width="70" alt="register-icon" class="mb-3" />
+            <h3 class="fw-bold text-uppercase text-dark">Đăng ký tài khoản</h3>
+            <p class="text-muted small">Tham gia cộng đồng <strong>FurnitureShop</strong> ngay hôm nay</p>
         </div>
-        <div class="mb-3">
-            <label asp-for="Password" class="form-label"></label>
-            <input asp-for="Password" class="form-control" />
-            <span asp-validation-for="Password" class="text-danger"></span>
-        </div>
-        <div class="mb-3">
-            <label asp-for="ConfirmPassword" class="form-label"></label>
-            <input asp-for="ConfirmPassword" class="form-control" />
-            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-        </div>
-        <button type="submit" class="btn btn-success">Đăng ký</button>
-        <a asp-action="Login" class="btn btn-link">Quay lại đăng nhập</a>
-    </form>
+
+        <form asp-action="Register" method="post">
+            @Html.AntiForgeryToken()
+
+            <div class="form-floating mb-3">
+                <input asp-for="UserName" class="form-control" placeholder="Tên đăng nhập" />
+                <label asp-for="UserName"><i class="bi bi-person-fill"></i> Tên đăng nhập</label>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Password" type="password" class="form-control" placeholder="Mật khẩu" />
+                <label asp-for="Password"><i class="bi bi-lock-fill"></i> Mật khẩu</label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating mb-4">
+                <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Xác nhận mật khẩu" />
+                <label asp-for="ConfirmPassword"><i class="bi bi-shield-check"></i> Xác nhận mật khẩu</label>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn register-btn w-100 py-2 fw-bold text-white shadow-sm">
+                <i class="bi bi-person-plus"></i> Đăng ký
+            </button>
+
+            <div class="text-center mt-3">
+                <span>Đã có tài khoản?</span>
+                <a asp-action="Login" class="fw-semibold text-primary text-decoration-none">Đăng nhập ngay</a>
+            </div>
+        </form>
+    </div>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
