@@ -85,11 +85,11 @@
                             @p.Description
                         </p>
 
-                        <div class="mt-auto d-flex justify-content-between align-items-center">
-                            <!-- ✅ Hiển thị giá không lỗi -->
+                        <div class="mt-auto d-flex justify-content-between align-items-center flex-wrap gap-1">
+                            <!-- ✅ Hiển thị giá -->
                             <span class="fw-bold text-primary fs-5">@($"{p.Price:N0} đ")</span>
 
-                            <!-- Thêm giỏ -->
+                            <!-- 🛒 Thêm giỏ -->
                             <form asp-controller="Cart" asp-action="Add" method="post" class="d-inline">
                                 <input type="hidden" name="productId" value="@p.Id" />
                                 @Html.AntiForgeryToken()
@@ -98,7 +98,13 @@
                                 </button>
                             </form>
 
-                            <!-- Chi tiết -->
+                            <!-- ❤️ Yêu thích -->
+                            <a asp-controller="Wishlist" asp-action="Add" asp-route-id="@p.Id"
+                               class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-heart"></i> Yêu thích
+                            </a>
+
+                            <!-- 👁️ Chi tiết -->
                             <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@p.Id">
                                 <i class="bi bi-eye"></i> Chi tiết
                             </a>

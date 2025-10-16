@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
 
+    <!-- ✅ Thêm dòng cần thiết đảm bảo icon ❤️ hiển thị đẹp nhất -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
@@ -43,8 +46,17 @@
                             <i class="bi bi-box-seam"></i> Sản phẩm
                         </a>
                     </li>
+
+                    @* 💖 Thêm menu Yêu thích (mới thêm) *@
                     @if (User.Identity?.IsAuthenticated ?? false && User.IsInRole("User"))
                     {
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString()=="Wishlist"?"active":"")"
+                               asp-controller="Wishlist" asp-action="Index">
+                                <i class="bi bi-heart-fill text-danger"></i> Yêu thích
+                            </a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString()=="Orders"?"active":"")"
                                asp-controller="Orders" asp-action="Index">
